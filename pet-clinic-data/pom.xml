@@ -14,6 +14,11 @@
 	<artifactId>pet-clinic-data</artifactId>
 	<name>pet-clinic-data</name>
 
+   <!-- We want this jar to be lean, with only the entities -->
+   <properties>
+      <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
+   </properties>
+
    <dependencies>
       <dependency>
          <groupId>org.projectlombok</groupId>
@@ -53,13 +58,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-maven-plugin</artifactId>
             <executions>
+               <!-- We want this jar to be lean, with only the entities -->
                <execution>
                   <goals>
                      <goal>repackage</goal>
                   </goals>
-                  <configuration>
-                     <skip>true</skip>
-                  </configuration>
                </execution>
             </executions>
          </plugin>
