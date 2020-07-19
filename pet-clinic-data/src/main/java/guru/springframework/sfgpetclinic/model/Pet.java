@@ -6,7 +6,9 @@ import java.time.LocalDate;
  * @author Bruno S. Alessi <bruno_alessi@yahoo.com.br>
  * @since 2020-07-19
  */
-public class Pet {
+public class Pet extends BaseEntity {
+
+	private static final long serialVersionUID = 1L;
 
 	private PetType petType;
 	private Owner owner;

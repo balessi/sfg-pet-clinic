@@ -4,8 +4,10 @@ package guru.springframework.sfgpetclinic.model;
  * @author Bruno S. Alessi <bruno_alessi@yahoo.com.br>
  * @since 2020-07-19
  */
-public class Person {
+public class Person extends BaseEntity {
 
+	private static final long serialVersionUID = 1L;
+	
 	private String firstName;
 	private String lastName;
 	
